@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" href="./styles.css"/>
+    </head>
+    <body>
+        <div id="heading-container">
+            <div id="heading">Articaholic</div>
+            <div id="login-form">
+                <div class = "info-field">
+                    <label for="li-username"><b>Email: </b></label><input type="email" id="li-username" name="li-username" placeholder="Email">
+                    <label for="li-password"><b>Password: </b></label><input type="password" id="li-password" name="li-password" placeholder="Password">
+                    <button id="register-form-button">Register</button><button id="login-button">Login</button>
+                </div>
+                <div id="login-alert">Wrong username or password, please try again!</div>
+            </div>
+        </div>
+        
+        <div id="register-form">
+            <h3>Register</h3>
+            <div class = "info-field"><label for="firstname"><b>First Name: </b></label><input type="text" id="firstname" name="firstname" placeholder="First name"></div>
+            <div class = "info-field"><label for="lastname"><b>Last Name: </b></label><input type="text" id="lastname" name="lastname" placeholder="Last Name"></div>
+            <div class = "info-field"><label for="username"><b>Email: </b></label><input type="text" id="username" name="username" placeholder="Username"></div>
+                
+            <div id="register-alert1">Your Username or email was claimed, please enter other one.</div>
+            <div id="register-alert2">Your Account is created, please log in.</div>
+            <div class = "info-field"><label for="password"><b>Password: </b></label><input type="password" id="password" name="password" placeholder="Password"></div>
+
+            <div><button id="register-button">Register</button><button id="cancel-reg-button">Cancel</button></div>
+        </div>
+        
+        <div id="articles-frame">
+            <div id="articles-list">
+                <div id="header">Articles</div>                
+                <ul id="items">
+                    <!--nothing here-->
+                </ul>                
+                <div><button id="add-button">Add New Article</button></div>
+            </div>            
+            <div id="info-form">
+                <div class = "info-field"><label for="title"><b>Title: </b></label><input type="text" id="title" name="title" placeholder="Title of the article"></div>
+                <div class = "info-field"><label for="author"><b>Author: </b></label><input type="text" id="author" name="author" placeholder="Writter's name"></div>
+                <div class = "info-field"><label for="code"><b>Code: </b></label><input type="text" id="code" name="code" placeholder="Article code"></div>
+                <label class = "info-field" for="content"><b>Content: </b></label>
+                <div class = "info-field"><textarea name="content" id="content" cols="100" rows="10" placeholder=""></textarea></div>
+                <span><button id="submit-button">Submit</button></span>
+                <span><button id="cancel-button">Cancel</button></span>
+                <span><button id="edit-button">Edit</button></span>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
